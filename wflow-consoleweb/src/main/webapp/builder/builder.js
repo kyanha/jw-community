@@ -200,7 +200,7 @@
         history.pushState({url: url}, "", url);
     },
     
-    ajaxRenderBuilder: function(url) {
+    ajaxRenderBuilder: function(url, skipPushState = false) {
         HelpGuide.hide();
         
         $("#builder-quick-nav #builder-menu ul #appNotExist").hide();
@@ -281,7 +281,9 @@
                 redirect = true;
                 return false;
             } else {
-                history.pushState({url: response.url+hash}, "", response.url+hash); //handled redirected URL
+                if(!skipPushState) {
+                    history.pushState({url: response.url+hash}, "", response.url+hash); //handled redirected URL
+                }
                 return response.text();
             }
         })
@@ -414,9 +416,9 @@
     initBuilder: function (callback) {
         if (!CustomBuilder.isAjaxReady) {
             window.onpopstate = function(event) {
-                if (event.state) {
+                if (event.state && event.state.url) { //need to check for event.state to prevent link with # click reach here.
                     var url = event.state.url;
-                    CustomBuilder.ajaxRenderBuilder(url);
+                    CustomBuilder.ajaxRenderBuilder(url, true); // when skipPushState is true, history.pushState won't be done
                 }
             };
             window.onbeforeunload = function() {
