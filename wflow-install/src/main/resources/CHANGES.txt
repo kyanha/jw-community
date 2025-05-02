@@ -2,6 +2,44 @@ Joget DX COMMUNITY
 ====================
 For more information, please refer to https://community.joget.org
 
+8.2.0
+=====
+3f9f26ae6 Fixed: jw-community - Security - Update Apache Tomcat to 9.0.104 for CVE-2025-31650. @8.2-SNAPSHOT
+a57a77764 Added: wflow-consoleweb/wflow-core - Trimeda Theme - Added Trimeda theme @8.2-SNAPSHOT
+81f82bb0e Modified: wflow-commons, wflow-core - List - Support cache row count with stale while revalidate caching method. @8.2-SNAPSHOT
+8a6ea3895 Fixed: wflow-consoleweb - Flexigrid - Adjusted height of arrow button and readjusted button position calculation. @8.2-SNAPSHOT
+0b468e59d Fixed: wflow-consoleweb - Property Editor - Correction of 9039e4ee. Property fields go missing on editing the record. T5419 @8.2-SNAPSHOT
+68fbe27de Fixed: wflow-consoleweb - Overview Icons - Fixed Overview Icon position and dark theme issue. @8.1-SNAPSHOT
+ae3e474c3 Fixed: wflow-consoleweb - Builders - Back/forward browser navigation not working properly. @8.2-SNAPSHOT
+f76d0b9fd Fixed: wflow-core/wflow-wfengine/wflow-commons/wflow-consoleweb - NPE - Fixed potential dereferencing of null pointers. @8.1-SNAPSHOT
+94bbe92bd Added: wflow-core - Plugin - Added new plugin type AppImportExportAwarePlugin. @8.2-SNAPSHOT
+544e19388 Modified: wflow-plugin-base - Plugin - Update Java Doc & comments. @8.2-SNAPSHOT
+73e3f3576 Added: wflow-plugin-base - Plugin - Added new plugin type Web Filter to support request interception. @8.2-SNAPSHOT
+b6ba8e664 Fixed: wflow-consoleweb - UI - reloadTable in dialogClose.jsp does not work. @8.2-SNAPSHOT
+d128dbd80 Fixed: wflow-core - UserviewUtil - renderJspAsString return string with i18n labels become `???`. @8.2-SNAPSHOT
+fb2ff2355 Modified: wflow-consoleweb - Console UI - Make jsontable to support flexible attributes and UserviewUtil.renderJspAsString. @8.2-SNAPSHOT
+b0ae8bfb7 Modified: wflow-plugin-base - ExtDefaultPlugin - Adding default implementation for getClassName(). @8.2-SNAPSHOT
+62448de69 Added: wflow-plugin-base - Plugin - Added new plugin type Console Page to support extending admin console feature. @8.2-SNAPSHOT
+f8bc81160 Added: wflow-plugin-base - Plugin - Added new plugin type UI HTML Injector to allow inject HTML based on URL patterns. @8.2-SNAPSHOT
+13e61d048 Added: wflow-plugin-base - Plugin - Added new interface SystemConfigurablePlugin to support plugin types that does not support configuration having a place to configure in Manage Plugins. @8.2-SNAPSHOT
+c513eacc9 Modified: wflow-consoleweb - PluginJsonController - Refactored code to reduce redundant code. @8.2-SNAPSHOT
+aa62f9f9e Added: wflow-plugin-base - Plugin - Added new plugin interface ActivationAwarePlugin to support processing after plugin installed and before plugin uninstalling. @8.2-SNAPSHOT
+943fdcb7f Fixed: jw-community - Plugin - Few javax.servlet-api versions are included causing noSuchMethodException when new added method in latest version is used. @8.2-SNAPSHOT
+b3a859f3c Fixed: jw-community - JDBC - Adding cache implementation for custom data source. T5401 @8.2-SNAPSHOT
+d7e7cb624 Fixed: wflow-consoleweb - List - Fixed list inbox assignment details displaying behind activity. T5887. @8.1-SNAPSHOT
+447551a52 Fixed: wflow-core/wflow-plugin-base/wflow-commons/wflow-consoleweb - Code Quality - Fixed redundant operations. @8.1-SNAPSHOT
+d72956fea Fixed: jw-community - Security - Update Apache Tomcat to 9.0.102 for CVE-2025-24813. T5913 @8.2-SNAPSHOT
+dce021d56 Fixed: wflow-wfengine - Archived Process - Fixed the archived process only stored the last value of workflow variables for every activity. T5903. @8.1-SNAPSHOT
+550a7113e Fixed: wflow-core - Governance Health Check - Fixed OrphanedFormDataCheck type null issue. T5960 @8.2-SNAPSHOT
+df6b2f996 Modified: wflow-core - Form ERD - Adding column label info for integration. @8.2-SNAPSHOT
+c01140db0 Fixed: wflow-core - Date Picker - Inconsistent positioning of the calendar UI at different zoom levels. @8.2-SNAPSHOT
+86bda4b40 Fixed: wflow-core - UI Builder - The default properties value for the palette element is cached and does not update when installed new plugin version. @8.2-SNAPSHOT
+e4ca25901 Fixed: wflow-consoleweb - Marketplace - Install button disappear caused by browser extension. @8.2-SNAPSHOT
+a3369ac56 Fixed: wflow-core - AppServiceImpl - Fixed NPE error when dragging run process element if process is empty. @8.2-SNAPSHOT
+cad242a4b Fixed: wflow-core - Memory - Fixed unreleased resources after not being used anymore @8.1-SNAPSHOT
+5b0c902ba Fixed: wflow-consoleweb - Property Editor - File & Image input style not handle correctly for light/dark theme and RTL. @8.1-SNAPSHOT
+b977c4544 Fixed: wflow-consoleweb - CSRF Protection - HEAD request should not need CSRF token. @8.2-SNAPSHOT
+
 8.1.12
 ======
 aeb0f5a48 Fixed: wflow-consoleweb - UI Builder - Can't add menu to category at the bottom of long scrolled sidebar. @8.1-SNAPSHOT
