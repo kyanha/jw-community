@@ -2,6 +2,29 @@ Joget DX COMMUNITY
 ====================
 For more information, please refer to https://community.joget.org
 
+8.2.1
+=====
+c3c5b99f3 Fixed: wflow-plugin-base - Plugin - Governance Health Check plugin is unable to install. #940 @8.2-SNAPSHOT
+78b953bd4 Fixed: wflow-core - EnvironmentVariableHashVariable - Added support for recursively resolving hash variables. #941 T6090 @8.2-SNAPSHOT
+e29d07fb3 Fixed: wflow-consoleweb - Flexigrid - Fixed separator line in Flexigrid not fully visible issue. @8.2-SNAPSHOT
+6e5a8710f Modified: wflow-plugin-archetype - Added plugin name and description to new plugins. #877 @8.2-SNAPSHOT
+bb8e1fc93 Fixed: wflow-consoleweb - Code Quality - Remove unused custom tag which flagged security issue. @8.2-SNAPSHOT
+6af72ff22 Fixed: wflow-consoleweb - Form Builder - Fixed additional RTL issues found in Form builder. #502 @8.2-SNAPSHOT
+064e2be74 Fixed: wflow-consoleweb - Builder Checkbox - Fixed checkbox overlapping label in RTL issue. #502 @8.2-SNAPSHOT
+5c1a6036b Fixed: wflow-core - DependenciesUtil - Allow processing with security manager and ensure thread safety. #832 @8.2-SNAPSHOT
+63cb84844 Fixed: wflow-core- Synchronisation - Fixed synchronization issues. @8.1-SNAPSHOT
+5799790e2 Modified: wflow-consoleweb - Service Worker - Fixed caching causing login redirection does not work correctly. #861 T5911 @8.2-SNAPSHOT
+3c972e107 Fixed: wflow-consoleweb - X-Admin Font Size Control - Fixed Font Size Control not fully clickable issue. @8.2-SNAPSHOT
+b11ca4718 Fixed: wflow-consoleweb - File Upload Fields - Fixed file upload name when special characters are used while in RTL. #896 @8.2-SNAPSHOT
+7bbf5f626 Fixed: wflow-consoleweb - File Upload and Image Upload Fields - Fixed RTL inconsistent styling issue. @8.2-SNAPSHOT
+28130dfa6 Fixed: wflow-plugin-base - Manage Plugin - Plugin shown empty type after depended plugin updated. #905  @8.2-SNAPSHOT
+a92dc0130 Fixed: wflow-consoleweb - Popup Form - Process related hash variable does not parse in nested popup form. #909 T6055 @8.2-SNAPSHOT
+f4e1b0f41 Fixed: wflow-consoleweb - Process Builder - Properly escape characters in tag content in XPDL. T6083 @8.2-SNAPSHOT
+80b1eb3c3 Fixed: wflow-consoleweb - Process Builder - Content for Condition tags in XPDL view is not being parsed. T6083 @8.2-SNAPSHOT
+705901319 Fixed: wflow-wfengine - Workflow Manager - Fixed process status missing after process migration. #T6076 @8.2-SNAPSHOT
+1be35b978 Fixed: wflow-consoleweb - Form Builder - Multi Paged Form tab should not clickable in the builder canvas. @8.2-SNAPSHOT
+13ca597c8 Fixed: wflow-consoleweb - Calculation Field - Incorrect result return when field with common suffix is in hidden section. #961 T6167 @8.2-SNAPSHOT
+
 8.2.0
 =====
 3f9f26ae6 Fixed: jw-community - Security - Update Apache Tomcat to 9.0.104 for CVE-2025-31650. @8.2-SNAPSHOT
